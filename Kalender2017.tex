@@ -1,0 +1,51 @@
+\listfiles
+\documentclass[svgnames]{kalenderRN}
+%\documentclass[svgnames,print]{kalenderRN}
+% "print" means printer-fiendly twoside output in portrait orientation, without "`print" means landscape orientation
+
+\begin{document}
+%define colors
+	%neutrale Farbtöne
+	\definecolor{K05}{cmyk}{0.00,0.00,0.00,0.05}
+	\definecolor{K10}{cmyk}{0.00,0.00,0.00,0.10}
+	\definecolor{K20}{cmyk}{0.00,0.00,0.00,0.20}
+	\definecolor{K30}{cmyk}{0.00,0.00,0.00,0.30}
+	\definecolor{K40}{cmyk}{0.00,0.00,0.00,0.40}
+	\definecolor{K50}{cmyk}{0.00,0.00,0.00,0.50}
+			
+	%gelbe Farbtöne
+	\definecolor{HKS03K}{cmyk}{0,0.5,1,0}
+	%rote Farbtöne
+	\definecolor{HKS14K1.0}{cmyk}{0.00,1.00,1.00,0.00}
+	\definecolor{HKS14K0.6}{cmyk}{0.00,0.80,0.60,0.00}
+	\definecolor{HKS14K0.5}{cmyk}{0.00,0.60,0.40,0.00}
+	\definecolor{HKS14K0.1}{cmyk}{0.00,0.20,0.10,0.00}
+			%grüne Farbtöne
+	\definecolor{HKS63K1.0}{cmyk}{0.7,0,1,0.5}
+	%blaue Farben
+	\definecolor{HKS43K1.0}{cmyk}{1.00,1.00,0.00,0.00}
+	\definecolor{HKS43K0.8}{cmyk}{1.00,0.90,0.00,0.00}
+	\definecolor{HKS43K0.6}{cmyk}{0.70,0.60,0.00,0.00}
+	\definecolor{HKS43K0.4}{cmyk}{0.50,0.40,0.00,0.00}
+	\definecolor{HKS43K0.2}{cmyk}{0.30,0.25,0.00,0.00}
+	\definecolor{HKS43K0.1}{cmyk}{0.15,0.15,0.00,0.00}
+	
+	\definecolor{period}{cmyk}{0.00,0.00,0.30,0.00} % Farbe der Ferienmarkierung
+													
+
+\makeKalender[%
+    year=2017,            % default: current year
+    title=Feiertage und Schulferien in Bayern,
+    showweeknumbers=true,      % default: false
+    titleColor=HKS43K1.0,      % default: dark 
+    eventColor=HKS14K0.6,    % default: medium 
+    workdayColor=K05,    % default: none 
+    saturdayColor=HKS14K0.1, % default: bright 
+    sundayColor=HKS14K0.5,   % default: medium
+    monthColor=white,     % default: white  
+    monthBGcolor=HKS43K1.0,
+%  {monthBGcolor,   % default: dark   
+  ]
+\end{document} 
+
+\grid
